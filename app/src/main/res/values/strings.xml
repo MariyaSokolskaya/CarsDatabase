@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CarsDatabase</string>
+    <string name="page_title">Добавление нового автомобиля</string>
+    <string name="model">модель машины</string>
+    <string name="price">стоимость машины</string>
+    <string name="year">Год выпуска</string>
+    <string name="power">Мощность</string>
+    <string name="type">Марка производителя</string>
+    <string name="country">Страна</string>
+    <string name="coeff">Оцените марку по шкале от 1 до 20</string>
+    <string name="add_text">Добавить машину в базу</string>
+</resources>

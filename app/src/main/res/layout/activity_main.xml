@@ -72,4 +72,10 @@
         android:text="@string/add_text"
         android:textSize="16sp"
         android:id="@+id/add_car"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_query_text"
+        android:textSize="16sp"
+        android:id="@+id/to_query"/>
 </LinearLayout>

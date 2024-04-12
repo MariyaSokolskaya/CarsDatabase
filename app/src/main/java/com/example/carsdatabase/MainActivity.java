@@ -3,6 +3,7 @@ package com.example.carsdatabase;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     DBHelper dbHelper;
     SQLiteDatabase db;
     EditText modelText, priceText, yearText, powerText, typeText, coeffText, countryText;
-    Button addButton;
+    Button addButton, toQueryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         coeffText = findViewById(R.id.coeff);
         countryText = findViewById(R.id.country);
         addButton = findViewById(R.id.add_car);
+        toQueryButton = findViewById(R.id.to_query);
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
                 typeText.setText("");
                 coeffText.setText("");
                 countryText.setText("");
+            }
+        });
+        toQueryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QueryActivity.class);
+                startActivity(intent);
             }
         });
     }

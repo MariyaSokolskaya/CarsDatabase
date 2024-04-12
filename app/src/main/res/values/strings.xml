@@ -9,4 +9,7 @@
     <string name="country">Страна</string>
     <string name="coeff">Оцените марку по шкале от 1 до 20</string>
     <string name="add_text">Добавить машину в базу</string>
+    <string name="title_query">Выбор машины</string>
+    <string name="find_text">Найти машины</string>
+    <string name="to_query_text">Перейти к запросам</string>
 </resources>
